@@ -77,9 +77,9 @@ module.exports = msgHndlr = async (kotz, mek) => {
             /* --------> [ Diamondya ] <-----------*/
             
             case "ff":
-                kotz.sendButtons(from, dm.ff(pushname), {id: "ADMIN", text: "ADMIN"})
+                kotz.sendButtons(from, dm.ff(pushname), [{id: "ADMIN", text: "ADMIN"}])
             case "ml":
-                kotz.sendButtons(from, dm.ml(cmd), {id: "ADMIN", text: "ADMIN"})
+                kotz.sendButtons(from, dm.ml(cmd), [{id: "ADMIN", text: "ADMIN"}])
             case 'd':
                 return kotz.sendText(from, fm.done(tanggal, waktu))
             case 'p':
